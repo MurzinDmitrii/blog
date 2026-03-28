@@ -1,0 +1,41 @@
+{
+    "name": "blog/smarty-php",
+    "description": "Blog on plain PHP + Smarty + MySQL",
+    "type": "project",
+    "require": {
+        "php": ">=8.1",
+        "smarty/smarty": "^4.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "migrate": "php bin/migrate.php",
+        "seed": "php bin/seed.php",
+        "analyse": "phpstan analyse --memory-limit=256M",
+        "test": "phpunit",
+        "lint": "php-cs-fixer fix --dry-run --diff",
+        "lint:fix": "php-cs-fixer fix",
+        "check": [
+            "@analyse",
+            "@lint",
+            "@test"
+        ]
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^11.0"
+    }
+}

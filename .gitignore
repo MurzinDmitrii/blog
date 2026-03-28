@@ -1,0 +1,8 @@
+/vendor/
+/templates_c/
+/node_modules/
+.env
+.env.local
+*.log
+.phpunit.cache/
+.php-cs-fixer.cache

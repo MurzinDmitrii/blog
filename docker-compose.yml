@@ -1,0 +1,42 @@
+name: blog
+
+services:
+  web:
+    container_name: blog-web
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    environment:
+      DB_HOST: db
+      DB_PORT: "3306"
+      DB_NAME: blog
+      DB_USER: blog
+      DB_PASSWORD: blog
+      DB_CHARSET: utf8mb4
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    container_name: blog-db
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: blog
+      MYSQL_USER: blog
+      MYSQL_PASSWORD: blog
+      MYSQL_ROOT_PASSWORD: rootsecret
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-prootsecret"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 15s
+
+volumes:
+  mysql_data:

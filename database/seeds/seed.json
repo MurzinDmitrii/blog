@@ -1,0 +1,252 @@
+{
+  "categories": [
+    {
+      "name": "Разработка",
+      "description": "Код, архитектура, инструменты."
+    },
+    {
+      "name": "DevOps",
+      "description": "Сборка, деплой, контейнеры."
+    },
+    {
+      "name": "Базы данных",
+      "description": "SQL, модели данных, миграции."
+    }
+  ],
+  "articles": [
+    {
+      "title": "Почему чистый PHP всё ещё актуален",
+      "description": "Кратко о том, когда стоит обходиться без фреймворка.",
+      "body": "Иногда достаточно небольшого набора файлов и PDO.\nФреймворки ускоряют работу, но добавляют слой абстракции.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 12,
+      "published_at": "2026-03-20 10:00:00",
+      "category_indexes": [0, 1]
+    },
+    {
+      "title": "Миграции схемы в MySQL",
+      "description": "Версионирование структуры базы без ORM.",
+      "body": "Таблица schema_migrations хранит применённые файлы.\nСкрипт накатывает только новые SQL-файлы по порядку.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 45,
+      "published_at": "2026-03-22 14:30:00",
+      "category_indexes": [0, 2]
+    },
+    {
+      "title": "Docker Compose для локальной разработки",
+      "description": "Веб и MySQL в одной команде.",
+      "body": "Сервисы связываются по имени хоста внутри сети compose.\nПорты пробрасываются на машину разработчика.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 30,
+      "published_at": "2026-03-25 09:15:00",
+      "category_indexes": [1]
+    },
+    {
+      "title": "Smarty: разделение логики и представления",
+      "description": "Шаблоны без PHP внутри HTML.",
+      "body": "Контроллер передаёт данные в Smarty.\nВ шаблоне — разметка и минимальная логика отображения.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 5,
+      "published_at": "2026-03-26 11:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "Индексы и сортировка в списках",
+      "description": "Просмотры и дата публикации.",
+      "body": "Для выборок по категории важны внешние ключи и индексы.\nСортировка по полям с индексом работает предсказуемее.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 88,
+      "published_at": "2026-03-28 16:45:00",
+      "category_indexes": [2]
+    },
+    {
+      "title": "Похожие статьи по категориям",
+      "description": "Связь многие-ко-многим в действии.",
+      "body": "Статьи делят категории через промежуточную таблицу.\nПохожие подбираются по пересечению категорий.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 20,
+      "published_at": "2026-03-29 08:00:00",
+      "category_indexes": [0, 2]
+    },
+    {
+      "title": "Разработка: тест пагинации 1",
+      "description": "Серия статей только в категории «Разработка».",
+      "body": "Текст для проверки списка и постраничной навигации.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 210,
+      "published_at": "2026-02-01 09:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "Разработка: тест пагинации 2",
+      "description": "Серия статей только в категории «Разработка».",
+      "body": "Текст для проверки списка и постраничной навигации.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 205,
+      "published_at": "2026-02-02 09:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "Разработка: тест пагинации 3",
+      "description": "Серия статей только в категории «Разработка».",
+      "body": "Текст для проверки списка и постраничной навигации.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 200,
+      "published_at": "2026-02-03 09:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "Разработка: тест пагинации 4",
+      "description": "Серия статей только в категории «Разработка».",
+      "body": "Текст для проверки списка и постраничной навигации.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 195,
+      "published_at": "2026-02-04 09:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "Разработка: тест пагинации 5",
+      "description": "Серия статей только в категории «Разработка».",
+      "body": "Текст для проверки списка и постраничной навигации.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 190,
+      "published_at": "2026-02-05 09:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "Разработка: тест пагинации 6",
+      "description": "Серия статей только в категории «Разработка».",
+      "body": "Текст для проверки списка и постраничной навигации.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 185,
+      "published_at": "2026-02-06 09:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "Разработка: тест пагинации 7",
+      "description": "Серия статей только в категории «Разработка».",
+      "body": "Текст для проверки списка и постраничной навигации.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 180,
+      "published_at": "2026-02-07 09:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "Разработка: тест пагинации 8",
+      "description": "Серия статей только в категории «Разработка».",
+      "body": "Текст для проверки списка и постраничной навигации.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 175,
+      "published_at": "2026-02-08 09:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "Разработка: тест пагинации 9",
+      "description": "Серия статей только в категории «Разработка».",
+      "body": "Текст для проверки списка и постраничной навигации.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 170,
+      "published_at": "2026-02-09 09:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "Разработка: тест пагинации 10",
+      "description": "Серия статей только в категории «Разработка».",
+      "body": "Текст для проверки списка и постраничной навигации.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 165,
+      "published_at": "2026-02-10 09:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "Разработка: тест пагинации 11",
+      "description": "Серия статей только в категории «Разработка».",
+      "body": "Текст для проверки списка и постраничной навигации.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 160,
+      "published_at": "2026-02-11 09:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "Разработка: тест пагинации 12",
+      "description": "Серия статей только в категории «Разработка».",
+      "body": "Текст для проверки списка и постраничной навигации.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 155,
+      "published_at": "2026-02-12 09:00:00",
+      "category_indexes": [0]
+    },
+    {
+      "title": "DevOps: тест пагинации 1",
+      "description": "Несколько статей только в DevOps.",
+      "body": "Текст для проверки второй категории.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 50,
+      "published_at": "2026-02-20 10:00:00",
+      "category_indexes": [1]
+    },
+    {
+      "title": "DevOps: тест пагинации 2",
+      "description": "Несколько статей только в DevOps.",
+      "body": "Текст для проверки второй категории.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 49,
+      "published_at": "2026-02-21 10:00:00",
+      "category_indexes": [1]
+    },
+    {
+      "title": "DevOps: тест пагинации 3",
+      "description": "Несколько статей только в DevOps.",
+      "body": "Текст для проверки второй категории.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 48,
+      "published_at": "2026-02-22 10:00:00",
+      "category_indexes": [1]
+    },
+    {
+      "title": "DevOps: тест пагинации 4",
+      "description": "Несколько статей только в DevOps.",
+      "body": "Текст для проверки второй категории.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 47,
+      "published_at": "2026-02-23 10:00:00",
+      "category_indexes": [1]
+    },
+    {
+      "title": "Базы данных: тест пагинации 1",
+      "description": "Несколько статей только в категории БД.",
+      "body": "Текст для проверки третьей категории.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 120,
+      "published_at": "2026-02-15 12:00:00",
+      "category_indexes": [2]
+    },
+    {
+      "title": "Базы данных: тест пагинации 2",
+      "description": "Несколько статей только в категории БД.",
+      "body": "Текст для проверки третьей категории.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 115,
+      "published_at": "2026-02-16 12:00:00",
+      "category_indexes": [2]
+    },
+    {
+      "title": "Базы данных: тест пагинации 3",
+      "description": "Несколько статей только в категории БД.",
+      "body": "Текст для проверки третьей категории.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 110,
+      "published_at": "2026-02-17 12:00:00",
+      "category_indexes": [2]
+    },
+    {
+      "title": "Базы данных: тест пагинации 4",
+      "description": "Несколько статей только в категории БД.",
+      "body": "Текст для проверки третьей категории.",
+      "image_path": "assets/img/placeholder.svg",
+      "view_count": 105,
+      "published_at": "2026-02-18 12:00:00",
+      "category_indexes": [2]
+    }
+  ]
+}

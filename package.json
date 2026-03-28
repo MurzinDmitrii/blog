@@ -1,0 +1,10 @@
+{
+  "name": "blog-assets",
+  "private": true,
+  "scripts": {
+    "build:css": "sass scss:public/assets/css --style=compressed --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

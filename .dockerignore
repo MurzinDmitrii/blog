@@ -1,0 +1,7 @@
+.git
+node_modules
+vendor
+templates_c
+*.md
+!README.md
+.env.local
